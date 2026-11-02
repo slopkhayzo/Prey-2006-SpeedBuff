@@ -1,5 +1,11 @@
 # PreySpeedBuff
 
+> [!WARNING]
+> This patch has been pretty much entirely been generated using AI; 
+> I won't and will never claim to have enough knowledge or expertise to do this 
+> kind of reverse-engineering by myself; I've tested briefly and spotted 
+> no major issues (on my machine ofc, if you have issues feel free to open an Issue).
+
 A 32-bit ASI plugin that sets the player's movement speed in the Steam release of
 Prey (2006) 1.4 from an INI file. It uses the same layout as
 [PreyHFR](https://github.com/slopkhayzo/Prey-2006-FPSFix): an external Ultimate
