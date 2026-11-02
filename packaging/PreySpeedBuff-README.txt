@@ -118,3 +118,9 @@ PreySpeedBuff.
 Prey is a trademark of its respective owners. This unofficial project is not
 affiliated with or endorsed by Bethesda Softworks, ZeniMax Media, Human Head
 Studios, or 3D Realms.
+
+
+Misc
+----
+
+For more game fixes, see https://slop-blog.enkhayzomachines.net/fixes
