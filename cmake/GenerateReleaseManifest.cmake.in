@@ -1,0 +1,34 @@
+set(_package_dir "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
+set(_payload_files
+    "PreySpeedBuff.asi"
+    "PreySpeedBuff.ini"
+    "PreySpeedBuff-README.txt"
+    "PreySpeedBuff-LICENSE.txt"
+)
+
+set(_file_entries "")
+foreach(_relative_path IN LISTS _payload_files)
+    set(_path "${_package_dir}/${_relative_path}")
+    if(NOT EXISTS "${_path}")
+        message(FATAL_ERROR "Cannot create release manifest: missing ${_relative_path}")
+    endif()
+    file(SHA256 "${_path}" _sha256)
+    if(_file_entries)
+        string(APPEND _file_entries ",\n")
+    endif()
+    string(APPEND _file_entries
+        "    {\"path\": \"${_relative_path}\", \"sha256\": \"${_sha256}\"}")
+endforeach()
+
+file(WRITE "${_package_dir}/PreySpeedBuff-release.json"
+"{\n"
+"  \"manifest_format\": 2,\n"
+"  \"name\": \"PreySpeedBuff\",\n"
+"  \"version\": \"@PREYSPEEDBUFF_PACKAGE_VERSION@\",\n"
+"  \"target\": \"windows-x86\",\n"
+"  \"compatibility\": {\n"
+"    \"policy\": \"prey-1.4-x86-structural-v1\",\n"
+"    \"tested_baseline_gamex86.dll_sha256\": \"74d436d376ba144762a28c940d0243135b4f9db8fdd7ee597b9cb5e4277b43c6\"\n"
+"  },\n"
+"  \"files\": [\n${_file_entries}\n  ]\n"
+"}\n")

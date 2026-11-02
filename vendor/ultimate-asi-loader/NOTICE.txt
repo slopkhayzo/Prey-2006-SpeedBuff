@@ -1,0 +1,27 @@
+Ultimate ASI Loader
+===================
+
+This directory contains an unmodified Win32 Ultimate ASI Loader v9.7.4 binary
+by ThirteenAG. The upstream dinput8.dll was renamed to dinput.dll because the
+supported Prey executable imports the legacy DINPUT library.
+
+Upstream project:
+https://github.com/ThirteenAG/Ultimate-ASI-Loader
+
+Pinned release:
+https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/tag/v9.7.4
+
+Source archive:
+Ultimate-ASI-Loader-NoPDB.zip
+
+Source archive SHA-256:
+14B3A1AD018899571AC9AA01482977F3C6D49E6CBA99F552D01C5ACACD1315E1
+
+dinput.dll SHA-256:
+EC2F4824ECA58DD40F425756A4A7CEC77B8E381F21D11D7C846EC4B339B617AB
+
+Original filename recorded by the binary:
+Ultimate-ASI-Loader-Win32.dll
+
+The loader is third-party software distributed under its included MIT license.
+It is not part of PreySpeedBuff and may also be used by other installed ASI plugins.

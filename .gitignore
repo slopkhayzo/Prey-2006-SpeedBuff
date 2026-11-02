@@ -1,0 +1,82 @@
+# Build systems and generated output
+/build*/
+/out/
+/_CPack_Packages/
+/CMakeFiles/
+/release/
+/research/
+CMakeCache.txt
+cmake_install.cmake
+CPackConfig.cmake
+CPackSourceConfig.cmake
+CTestTestfile.cmake
+DartConfiguration.tcl
+Makefile
+build.ninja
+.ninja_*
+install_manifest.txt
+compile_commands.json
+
+# Visual Studio and editor state
+/.vs/
+/.vscode/
+/.idea/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.user
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Compiled and packaged artifacts
+*.exe
+*.dll
+!vendor/ultimate-asi-loader/dinput.dll
+*.lib
+*.exp
+*.ilk
+*.obj
+*.o
+*.pdb
+*.idb
+*.zip
+*.7z
+*.tar
+*.gz
+*.sha256
+PreySpeedBuff-release.json
+PreySpeedBuff.log
+
+# Retail game files and user data (never redistribute)
+/base/
+/pb/
+prey.exe
+PREYDed.exe
+*.pk4
+*.save
+preyconfig.cfg
+preykey
+
+# Local reverse-engineering inputs and research output
+/research/
+/third_party/
+/_backups/
+*.gpr
+*.rep/
+*.bin
+*.dmp
+
+# Local notes and captures
+prompt*.txt
+*.csv
+*.etl
+*.log
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
